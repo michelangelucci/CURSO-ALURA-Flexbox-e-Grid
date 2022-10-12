@@ -39,6 +39,29 @@ body {
     width: 40px;
 }
 
+.cabecalho__perfil {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .cabecalho {
+    background-color: #1D232A;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 16px 60px;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  
+  .cabecalho__menu {
+    display: none;
+  }
+  
+  .cabecalho__logo {
+    display: none;
+  }
+}
+
 .menu-lateral {
     display: flex;
     flex-direction: column;
