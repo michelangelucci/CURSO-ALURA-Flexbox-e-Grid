@@ -325,6 +325,12 @@ body {
     font-size: 24px;
 }
 
+.cartao__botao--local::before{
+    content: "\e908";
+    font-size: 24px;
+}
+
+
 .cartao__botao--destaque {
     width: 100%;
     grid-column: span 2;
@@ -386,6 +392,7 @@ body {
     .cartao__item {
         display: grid;
         grid-template-columns: auto 1fr;
+        column-gap: 8px;
     }
 
     .cartao__item-thumbnail {
@@ -407,10 +414,6 @@ body {
     .cartao__botao--destaque {
         grid-column: auto;
         padding: 16px 8px;
-    }
-
-    .picos-recentes {
-        display: block;
     }
 }
 
