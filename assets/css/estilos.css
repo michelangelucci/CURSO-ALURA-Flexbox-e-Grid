@@ -141,6 +141,7 @@ body {
   .menu-lateral {
     position: static;
     width: 200px;
+    grid-row: 1;
   }
 }
 
