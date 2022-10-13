@@ -177,6 +177,12 @@ body {
     gap: 16px;
 }
 
+.principal-picos {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
@@ -195,19 +201,31 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .principal {
+    .principal {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "destaque-video destaque-video videos-recentes"
+            "secao-videos secao-videos secao-videos"
+            "artes-recentes destaque-produtos destaque-produtos"
+            "produtos-recentes produtos-recentes produtos-recentes"
+        ;
+        column-gap: 32px;
+        padding: 16px 60px;
+      }
+  
+    .principal-picos {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: 
         "titulo-pagina titulo-pagina titulo-pagina"
-        "destaque-video destaque-video videos-recentes"
-        "secao-videos secao-videos secao-videos"
-        "artes-recentes destaque-produtos destaque-produtos"
-        "produtos-recentes produtos-recentes produtos-recentes"
-        
-    ;
+        "destaque-pico destaque-pico picos-recentes"
+        "secao-picos secao-picos secao-picos"
+        ;
     column-gap: 32px;
     padding: 16px 60px;
+    align-self: flex-start;
   }
 
   .titulo-pagina {
@@ -217,6 +235,14 @@ body {
   .titulo-secao {
     grid-column: span 4;
   }
+
+  .destaque-pico {
+    grid-area: destaque-pico;
+  }
+
+  .secao-picos {
+    grid-area: secao-picos;
+  }
 }
 
 .cartao {
@@ -224,7 +250,6 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background: #2C343A;
-   
 }
 
 .cartao__imagem-desktop {
@@ -313,6 +338,10 @@ body {
     display: none;
 }
 
+.picos-recentes {
+    display: none;
+}
+
 @media screen and (min-width:1440px) {
     .cartao--testaque {
         margin-bottom: 0;
@@ -380,6 +409,9 @@ body {
         padding: 16px 8px;
     }
 
+    .picos-recentes {
+        display: block;
+    }
 }
 
 
