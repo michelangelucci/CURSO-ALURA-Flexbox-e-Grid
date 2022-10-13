@@ -183,6 +183,12 @@ body {
     margin: 5px;
 }
 
+.secao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
 .titulo-secao {
     font-size: 1.2rem;
     font-weight: 700;
@@ -211,7 +217,6 @@ body {
   .titulo-secao {
     grid-column: span 4;
   }
-
 }
 
 .cartao {
@@ -219,6 +224,7 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background: #2C343A;
+   
 }
 
 .cartao__imagem-desktop {
