@@ -52,6 +52,7 @@ body {
     padding: 16px 60px;
     height: 80px;
     box-sizing: border-box;
+    grid-column: 2;
   }
   
   .cabecalho__menu {
@@ -141,7 +142,8 @@ body {
   .menu-lateral {
     position: static;
     width: 200px;
-    grid-row: 1;
+    grid-row: 1 / span 2;
+    grid-column: 1;
   }
 }
 
@@ -186,13 +188,30 @@ body {
     font-weight: 700;
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .principal {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "destaque-video destaque-video videos-recentes"
+        "secao-videos secao-videos secao-videos"
+        "artes-recentes destaque-produtos destaque-produtos"
+        "produtos-recentes produtos-recentes produtos-recentes"
+        
+    ;
     column-gap: 32px;
     padding: 16px 60px;
   }
+
+  .titulo-pagina {
+    grid-area: titulo-pagina;
+  }
+
+  .titulo-secao {
+    grid-column: span 4;
+  }
+
 }
 
 .cartao {
@@ -200,6 +219,10 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background: #2C343A;
+}
+
+.cartao__imagem-desktop {
+    display: none;
 }
 
 .cartao--testaque {
@@ -285,14 +308,27 @@ body {
 }
 
 @media screen and (min-width:1440px) {
+    .cartao--testaque {
+        margin-bottom: 0;
+    }
+    
+    .cartao__imagem-mobile {
+        display: none;
+    }
+    
+    .cartao__imagem-desktop {
+        display: block;
+    }
+    
     .cartao--recentes {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr auto;
         align-items: center;
         row-gap: 24px;
         width: 256px;
         padding: 16px;
         box-sizing: border-box;
+        align-self: flex-start;
     }
 
     .cartao--recentes .cartao__titulo {
@@ -333,9 +369,45 @@ body {
         color: #95999C;
     }
 
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
 }
 
-.secao {
-    display: grid;
-    gap: 16px;
+
+@media screen and (min-width:1440px) {   
+    .secao {
+        display: grid;
+        gap: 16px;
+    }
+    
+    .secao {
+        grid-template-columns: repeat(4,1fr);
+    }
+        
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+
+    .artes-recentes {
+        grid-area: artes-recentes;
+    }
+
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
 }
