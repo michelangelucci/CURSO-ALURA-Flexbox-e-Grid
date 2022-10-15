@@ -7,7 +7,7 @@ final do curso de Flexbox e Grid da Alura.
 | -------------  | --- |
 | :sparkles: Nome        | **Projeto Final do Curso de Flexbox e Grid**
 | :label: Tecnologias | html, css e js
-| :rocket: URL         | https://url-deploy.com.br
+| :rocket: URL         | https://cursoalura-flexbox-grid-mmkm7mbsc-michelangelucci.vercel.app/
 | :fire: Desafio     | https://url-do-desafio.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
