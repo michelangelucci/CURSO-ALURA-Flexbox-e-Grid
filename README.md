@@ -3,6 +3,16 @@
 Esse é o resultado final, com algumas modificações personalizadas, do projeto
 final do curso de Flexbox e Grid da Alura.
 
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Projeto Final do Curso de Flexbox e Grid**
+| :label: Tecnologias | html, css e js
+| :rocket: URL         | https://url-deploy.com.br
+| :fire: Desafio     | https://url-do-desafio.com.br
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+
 ## Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
