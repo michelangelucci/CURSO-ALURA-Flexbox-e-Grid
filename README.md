@@ -1,4 +1,4 @@
-# Projeto Final do Curso de Flexbox e Grid da Alura
+# Projeto Final do Curso de Flexbox e Grid
 
 Esse é o resultado final, com algumas modificações personalizadas, do projeto
 final do curso de Flexbox e Grid da Alura.
