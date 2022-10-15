@@ -1,4 +1,9 @@
-# Guia de estilos
+# Projeto Final do Curso de Flexbox e Grid da Alura
+
+Esse é o resultado final, com algumas modificações personalizadas, do projeto
+final do curso de Flexbox e Grid da Alura.
+
+## Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
 
